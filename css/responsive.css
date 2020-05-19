@@ -30,12 +30,18 @@
     ##Screen = B/w 768px to 1024px
   */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .login-heading h1 {
         font-size: 1.5rem;
     }
     .loginBtn {
-      width: 100%;
+        width: 100%;
+    }
+    body {
+        background-position: center;
+    }
+    .form-wrapper {
+        width: 65%;
     }
 }
 
@@ -49,7 +55,13 @@
         font-size: 1.3rem;
     }
     .loginBtn {
-      width: 100%;
+        width: 100%;
+    }
+    body {
+        background-position: center;
+    }
+    .form-wrapper {
+        width: 65%;
     }
 }
 
@@ -62,5 +74,13 @@
     .login-heading h1 {
         font-size: 1.3rem;
     }
- 
+    .loginBtn {
+        width: 100%;
+    }
+    body {
+        background-position: center;
+    }
+    .form-wrapper {
+        width: 65%;
+    }
 }
