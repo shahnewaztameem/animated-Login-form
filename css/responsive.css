@@ -34,6 +34,9 @@
     .login-heading h1 {
         font-size: 1.5rem;
     }
+    .loginBtn {
+      width: 100%;
+    }
 }
 
 /* 
@@ -43,7 +46,10 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
     .login-heading h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+    .loginBtn {
+      width: 100%;
     }
 }
 
@@ -54,6 +60,7 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
     .login-heading h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
+ 
 }
