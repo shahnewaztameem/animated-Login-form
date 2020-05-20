@@ -21,7 +21,7 @@ function removeActivePasswordField(){
 // dark theme toggler
 darkThemeBtn.addEventListener('click', function () {
     let darkThemeEnabled = document.body.classList.toggle('dark-theme');
-    darkThemeBtn.innerHTML = 'Light';
+    darkThemeBtn.textContent === 'Dark' ? darkThemeBtn.textContent = 'Light' : darkThemeBtn.textContent = 'Dark';
     localStorage.setItem('dark-theme-enabled', darkThemeEnabled);
 });
 
