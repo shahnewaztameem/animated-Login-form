@@ -195,7 +195,7 @@ body.dark-theme {
     opacity: 1;
     color: #fff;
 }
-.dark-theme .field::after {
+.dark-theme.field::after {
   background: #fff;
 }
 
