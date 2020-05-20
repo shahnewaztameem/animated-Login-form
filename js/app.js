@@ -23,6 +23,7 @@ darkThemeBtn.addEventListener('click', function () {
     let darkThemeEnabled = document.body.classList.toggle('dark-theme');
     darkThemeBtn.textContent === 'Dark' ? darkThemeBtn.textContent = 'Light' : darkThemeBtn.textContent = 'Dark';
     localStorage.setItem('dark-theme-enabled', darkThemeEnabled);
+    
 });
 
 if (JSON.parse(localStorage.getItem('dark-theme-enabled'))) {
