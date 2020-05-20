@@ -1,6 +1,7 @@
 var password = document.getElementById('pwd');
-
 var eye = document.getElementById('eye');
+
+var darkThemeBtn = document.getElementById('change-theme-btn');
 
 eye.addEventListener('mouseenter', addActivePasswordField);
 eye.addEventListener('mouseleave', removeActivePasswordField);
@@ -17,8 +18,10 @@ function removeActivePasswordField(){
 }
 
 
-document.getElementById('change-theme-btn').addEventListener('click', function () {
+// dark theme toggler
+darkThemeBtn.addEventListener('click', function () {
     let darkThemeEnabled = document.body.classList.toggle('dark-theme');
+    darkThemeBtn.innerHTML = 'Light';
     localStorage.setItem('dark-theme-enabled', darkThemeEnabled);
 });
 

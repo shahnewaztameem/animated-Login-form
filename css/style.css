@@ -17,13 +17,14 @@ body {
     background-size: cover;
     height: 90vh;
     color: #111111;
+    transition: all 0.3s ease-out;
 }
 
 .form-wrapper {
-  top:50%;
-  left: 50%;
-  position: fixed;
-  transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
 }
 .field {
     width: 100%;
@@ -90,7 +91,6 @@ body {
     transform: scale(0.8) translateY(-5rem);
     opacity: 1;
     color: #111;
-  
 }
 
 .loginBtn {
@@ -125,20 +125,19 @@ body {
     color: #111;
 } */
 .active {
-  transition: 500ms ease;
+    transition: 500ms ease;
 }
 .active::before {
-  content: "🙈";
+    content: '🙈';
 }
-
 
 /* theme styles */
 
 body.dark-theme {
-    background-color: #222;
+    background: #222;
     color: #fff;
-  }
-  #change-theme-btn {
+}
+#change-theme-btn {
     font: inherit;
     padding: 0.1em 0.25em;
     border: 0;
@@ -150,8 +149,9 @@ body.dark-theme {
     position: relative;
     background-color: transparent;
     overflow: hidden;
-  }
-  #change-theme-btn::before, #change-theme-btn::after {
+}
+#change-theme-btn::before,
+#change-theme-btn::after {
     content: '';
     z-index: -1;
     position: absolute;
@@ -160,19 +160,45 @@ body.dark-theme {
     width: 100%;
     height: 100%;
     background-color: #222;
-    transition: all 0.15s ease-out;
-  }
-  #change-theme-btn::after {
+    transition: all 0.3s ease-out;
+}
+#change-theme-btn::after {
     background-color: #fff;
     left: 100%;
-  }
-  
-  .dark-theme #change-theme-btn {
+}
+
+.dark-theme #change-theme-btn {
     color: #222;
-  }
-  .dark-theme #change-theme-btn::before {
+}
+.dark-theme #change-theme-btn::before {
     left: -100%;
-  }
-  .dark-theme #change-theme-btn::after {
+}
+.dark-theme #change-theme-btn::after {
     left: 0;
-  }
+}
+.dark-theme .label {
+    color: #fff;
+}
+.dark-theme .loginBtn {
+  background-color: #fff;
+  color: #111;
+  border: 3px solid #fff;
+}
+.dark-theme .loginBtn:hover {
+  color: #fff;
+  background-color: #111;
+}
+
+.dark-theme .field:focus-within .label,
+.input:not(:placeholder-shown) + .label {
+    transform: scale(0.8) translateY(-5rem);
+    opacity: 1;
+    color: #fff;
+}
+.dark-theme .field::after {
+  background: #fff;
+}
+
+.dark-theme .input:valid {
+  color: #fff;
+} 
