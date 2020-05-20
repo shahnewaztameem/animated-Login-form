@@ -190,12 +190,12 @@ body.dark-theme {
 }
 
 .dark-theme .field:focus-within .label,
-.input:not(:placeholder-shown) + .label {
+.dark-theme .input:not(:placeholder-shown) + .label {
     transform: scale(0.8) translateY(-5rem);
     opacity: 1;
     color: #fff;
 }
-.dark-theme.field::after {
+.dark-theme .field::after {
   background: #fff;
 }
 
