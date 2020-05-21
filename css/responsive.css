@@ -37,8 +37,8 @@
     .loginBtn {
         width: 100%;
     }
-    body {
-        background-position: center;
+    body,body.dark-theme {
+        background-position: center !important;
     }
     .form-wrapper {
         width: 65%;
@@ -57,8 +57,8 @@
     .loginBtn {
         width: 100%;
     }
-    body {
-        background-position: center;
+    body,body.dark-theme {
+        background-position: center !important;
     }
     .form-wrapper {
         width: 65%;
@@ -77,8 +77,8 @@
     .loginBtn {
         width: 100%;
     }
-    body {
-        background-position: center;
+    body, body.dark-theme {
+        background-position: center !important;
     }
     .form-wrapper {
         width: 65%;

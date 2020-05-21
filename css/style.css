@@ -26,6 +26,7 @@ body {
     margin-top: 15px;
 }
 .form-wrapper {
+    width: 25%;
     top: 50%;
     left: 50%;
     position: fixed;
@@ -200,6 +201,14 @@ button:hover {
     position: absolute;
     right: -5px;
     width: 40px;
+    opacity: .6;
+    transition: .2s ease;
+}
+.ant-opacity img {
+    opacity: 1;
+}
+.ant-pwd-show img:hover{
+    opacity: 1;
 }
 /* theme styles */
 

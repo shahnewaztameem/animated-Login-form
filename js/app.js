@@ -43,6 +43,7 @@ img.addEventListener('click', function () {
     if (img.src.match('close-eye')) {
         img.src = '/img/Open-eye.svg';
         password.type = 'text';
+        img.style.opacity = '1';
     } else {
         img.src = '/img/close-eye.svg';
         password.type = 'password';
